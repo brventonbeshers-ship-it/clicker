@@ -212,3 +212,9 @@ body {
 .neon-border {
   animation: neon-pulse 3s infinite;
 }
+
+/* --- Disabled states --- */
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: auto;
+}
