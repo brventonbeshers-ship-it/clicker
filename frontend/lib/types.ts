@@ -15,3 +15,5 @@ export interface GameStats {
   userClicks: number;
   leaderboard: LeaderEntry[];
 }
+
+// types: 1773419612352
