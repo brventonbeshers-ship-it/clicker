@@ -185,3 +185,57 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
 }
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
+
+/* --- Pulse dot --- */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+.pulse-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #00f0ff;
+  animation: pulse-dot 2s infinite;
+}
+
+/* --- Neon border --- */
+@keyframes neon-pulse {
+  0%, 100% { border-color: rgba(0, 240, 255, 0.3); }
+  50% { border-color: rgba(0, 240, 255, 0.6); }
+}
+.neon-border {
+  animation: neon-pulse 3s infinite;
+}
+
+/* --- Disabled states --- */
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
+
+/* --- Shimmer --- */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* updated: 1773420048630 */
+
+/* --- Rank badges --- */
+.rank-gold { color: #ffd700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.3); }
+.rank-silver { color: #c0c0c0; text-shadow: 0 0 8px rgba(192, 192, 192, 0.3); }
+.rank-bronze { color: #cd7f32; text-shadow: 0 0 8px rgba(205, 127, 50, 0.3); }

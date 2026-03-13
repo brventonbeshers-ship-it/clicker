@@ -241,3 +241,5 @@ export async function fetchUserClicks(userAddress: string): Promise<number> {
 function toHex(bytes: number[]): string {
   return bytes.map((b) => b.toString(16).padStart(2, "0")).join("");
 }
+
+// perf: 1773419698617

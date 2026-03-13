@@ -1,0 +1,24 @@
+interface WalletButtonProps {
+  connected: boolean;
+  address?: string;
+  onConnect: () => void;
+}
+
+function shorten(addr: string) {
+  return addr.slice(0, 5) + "..." + addr.slice(-4);
+}
+
+export function WalletButton({ connected, address, onConnect }: WalletButtonProps) {
+  return (
+    <button
+      onClick={onConnect}
+      className={`px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 cursor-pointer ${
+        connected
+          ? "glass-card text-[#00f0ff] border-[#00f0ff]/20"
+          : "bg-gradient-to-r from-[#00f0ff] to-[#8b5cf6] text-black hover:opacity-90"
+      }`}
+    >
+      {connected && address ? shorten(address) : "Connect Wallet"}
+    </button>
+  );
+}
