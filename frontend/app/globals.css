@@ -218,3 +218,6 @@ button:disabled {
   cursor: not-allowed;
   pointer-events: auto;
 }
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
