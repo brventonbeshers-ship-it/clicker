@@ -187,10 +187,14 @@ export async function fetchLeaderboard(): Promise<LeaderEntry[]> {
     const data = await callReadOnly("get-leaderboard");
     if (data.okay && data.result) {
       const cv = hexToCV(data.result);
-      const list = cvToValue(cv) as Array<{ who: string; clicks: string | number | bigint }>;
-      return list
-        .map((e) => ({ who: String(e.who), clicks: Number(e.clicks) }))
-        .filter((e) => e.clicks > 0);
+      const raw = cvToValue(cv, true);
+      const list = (raw as any[]).map((item: any) => {
+        const entry = item.value || item;
+        const who = entry.who?.value || entry.who || "";
+        const clicks = Number(entry.clicks?.value ?? entry.clicks ?? 0);
+        return { who: String(who), clicks };
+      });
+      return list.filter((e) => e.clicks > 0);
     }
     return [];
   } catch {
@@ -204,7 +208,8 @@ export async function fetchTotalClicks(): Promise<number> {
     const data = await callReadOnly("get-total-clicks");
     if (data.okay && data.result) {
       const cv = hexToCV(data.result);
-      return Number(cvToValue(cv));
+      const val = cvToValue(cv, true);
+      return Number(val?.value ?? val ?? 0);
     }
     return 0;
   } catch {
@@ -224,7 +229,8 @@ export async function fetchUserClicks(userAddress: string): Promise<number> {
     const data = await callReadOnly("get-user-clicks", [hex]);
     if (data.okay && data.result) {
       const resultCV = hexToCV(data.result);
-      return Number(cvToValue(resultCV));
+      const val = cvToValue(resultCV, true);
+      return Number(val?.value ?? val ?? 0);
     }
     return 0;
   } catch {
