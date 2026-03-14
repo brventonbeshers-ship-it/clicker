@@ -1,0 +1,8 @@
+// Site configuration
+export const SITE = {
+  name: "Clicker",
+  description: "On-chain tap game on Stacks",
+  url: "https://clicker-stacks.vercel.app",
+  github: "https://github.com/brventonbeshers-ship-it/clicker",
+  contract: "SP1Q7YR67R6WGP28NXDJD1WZ11REPAAXRJJ3V6RKM.clicker",
+} as const;
