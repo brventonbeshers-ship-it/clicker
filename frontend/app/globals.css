@@ -382,3 +382,9 @@ button:disabled {
   transition: opacity 0.2s;
 }
 .tooltip:hover::after { opacity: 1; }
+
+/* --- Counter numerals --- */
+.counter-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
