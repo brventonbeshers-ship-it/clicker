@@ -423,3 +423,8 @@ html { scroll-behavior: smooth; }
 /* --- Transition util --- */
 .transition-fast { transition: all 0.15s ease; }
 .transition-med { transition: all 0.3s ease; }
+
+/* --- Card shadow --- */
+.card-elevated {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.05);
+}
