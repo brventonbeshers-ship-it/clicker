@@ -326,3 +326,15 @@ html { scroll-behavior: smooth; }
 }
 
 /* updated: 1773527687763 */
+
+/* --- Enhanced tap glow --- */
+.tap-glow-intense {
+  filter: brightness(1.3) saturate(1.2);
+}
+
+/* --- Fade in --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease forwards; }
