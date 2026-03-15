@@ -353,3 +353,10 @@ button:disabled {
 .neon-border {
   animation: neon-pulse 3s infinite;
 }
+
+/* --- Gradient text utility --- */
+.text-gradient-accent {
+  background: linear-gradient(135deg, #00f0ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
