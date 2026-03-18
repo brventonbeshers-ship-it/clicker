@@ -598,3 +598,7 @@ html { scroll-behavior: smooth; }
 .tap-glow-intense {
   filter: brightness(1.3) saturate(1.2);
 }
+
+/* --- Transition util --- */
+.transition-fast { transition: all 0.15s ease; }
+.transition-med { transition: all 0.3s ease; }
