@@ -968,3 +968,6 @@ button:disabled {
   transition: opacity 0.2s;
 }
 .tooltip:hover::after { opacity: 1; }
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
