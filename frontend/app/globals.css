@@ -1115,3 +1115,8 @@ html { scroll-behavior: smooth; }
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.03);
 }
+
+/* --- Mobile tap area --- */
+@media (max-width: 640px) {
+  .tap-target-mobile { min-width: 48px; min-height: 48px; }
+}
