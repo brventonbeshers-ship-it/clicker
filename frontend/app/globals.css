@@ -1223,3 +1223,9 @@ html { scroll-behavior: smooth; }
 @media (max-width: 640px) {
   .tap-target-mobile { min-width: 48px; min-height: 48px; }
 }
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
