@@ -1218,3 +1218,8 @@ html { scroll-behavior: smooth; }
 .neon-border {
   animation: neon-pulse 3s infinite;
 }
+
+/* --- Mobile tap area --- */
+@media (max-width: 640px) {
+  .tap-target-mobile { min-width: 48px; min-height: 48px; }
+}
