@@ -1545,3 +1545,9 @@ button:disabled {
 
 /* --- Smooth scroll --- */
 html { scroll-behavior: smooth; }
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
