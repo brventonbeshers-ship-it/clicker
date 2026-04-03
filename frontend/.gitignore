@@ -147,3 +147,15 @@ npm-debug.log*
 .env
 .env.local
 
+
+# IDE
+.vscode/
+.idea/
+
+# Debug
+npm-debug.log*
+
+# Env
+.env
+.env.local
+
