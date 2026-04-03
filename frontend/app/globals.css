@@ -1701,3 +1701,10 @@ html { scroll-behavior: smooth; }
   background: #00f0ff;
   animation: pulse-dot 2s infinite;
 }
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(0, 240, 255, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
