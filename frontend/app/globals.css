@@ -1935,3 +1935,52 @@ html { scroll-behavior: smooth; }
 .tap-glow-intense {
   filter: brightness(1.3) saturate(1.2);
 }
+
+/* --- Pulse dot --- */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+.pulse-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #00f0ff;
+  animation: pulse-dot 2s infinite;
+}
+
+/* --- Mobile tap area --- */
+@media (max-width: 640px) {
+  .tap-target-mobile { min-width: 48px; min-height: 48px; }
+}
+
+/* --- Fade in --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease forwards; }
+
+/* updated: 1775269013365 */
+
+/* --- Disabled states --- */
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
+/* --- Transition util --- */
+.transition-fast { transition: all 0.15s ease; }
+.transition-med { transition: all 0.3s ease; }
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(0, 240, 255, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
