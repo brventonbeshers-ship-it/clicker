@@ -2116,3 +2116,8 @@ button:disabled {
 }
 
 /* updated: 1775282240379 */
+
+/* --- Card shadow --- */
+.card-elevated {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.05);
+}
