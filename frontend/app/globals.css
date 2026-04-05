@@ -2280,3 +2280,5 @@ button:disabled {
   to { opacity: 1; transform: translateY(0); }
 }
 .fade-in { animation: fadeIn 0.5s ease forwards; }
+
+/* updated: 1775389210584 */
