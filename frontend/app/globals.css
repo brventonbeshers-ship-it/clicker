@@ -2294,3 +2294,6 @@ button:disabled {
   background: #00f0ff;
   animation: pulse-dot 2s infinite;
 }
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
