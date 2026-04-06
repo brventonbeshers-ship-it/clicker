@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brventonbeshers-ship-it/clicker"
+  },
   "dependencies": {
     "@stacks/network": "^7.3.1",
     "@stacks/transactions": "^7.3.1"
