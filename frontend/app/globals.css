@@ -2586,3 +2586,7 @@ button:disabled {
   transition: opacity 0.2s;
 }
 .tooltip:hover::after { opacity: 1; }
+
+/* --- Transition util --- */
+.transition-fast { transition: all 0.15s ease; }
+.transition-med { transition: all 0.3s ease; }
