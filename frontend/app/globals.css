@@ -2614,3 +2614,9 @@ button:disabled {
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+/* --- Disabled states --- */
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: auto;
+}
