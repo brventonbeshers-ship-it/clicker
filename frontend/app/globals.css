@@ -2558,3 +2558,9 @@ button:disabled {
   background: rgba(0, 240, 255, 0.25);
   color: #fff;
 }
+
+/* --- Leaderboard hover --- */
+.lb-row:hover {
+  background: rgba(0, 240, 255, 0.04);
+  transition: background 0.2s ease;
+}
