@@ -291,3 +291,5 @@ function toHex(bytes: number[]): string {
 // perf: 1775389419313
 
 // perf: 1775436684683
+
+// perf: 1775510111924
