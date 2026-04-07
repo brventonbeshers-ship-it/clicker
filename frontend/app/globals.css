@@ -2677,3 +2677,7 @@ html { scroll-behavior: smooth; }
 }
 
 /* updated: 1775597797280 */
+
+/* --- Transition util --- */
+.transition-fast { transition: all 0.15s ease; }
+.transition-med { transition: all 0.3s ease; }
