@@ -2712,3 +2712,33 @@ html { scroll-behavior: smooth; }
 .rank-gold { color: #ffd700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.3); }
 .rank-silver { color: #c0c0c0; text-shadow: 0 0 8px rgba(192, 192, 192, 0.3); }
 .rank-bronze { color: #cd7f32; text-shadow: 0 0 8px rgba(205, 127, 50, 0.3); }
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
+
+/* --- Tooltip --- */
+.tooltip {
+  position: relative;
+}
+.tooltip::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.tooltip:hover::after { opacity: 1; }
+
+/* --- Mobile tap area --- */
+@media (max-width: 640px) {
+  .tap-target-mobile { min-width: 48px; min-height: 48px; }
+}
