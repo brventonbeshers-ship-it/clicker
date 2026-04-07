@@ -2755,3 +2755,10 @@ html { scroll-behavior: smooth; }
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+/* --- Fade in --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease forwards; }
