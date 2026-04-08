@@ -2836,3 +2836,23 @@ html { scroll-behavior: smooth; }
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.02em;
 }
+
+/* --- Fade in --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease forwards; }
+
+/* --- Leaderboard hover --- */
+.lb-row:hover {
+  background: rgba(0, 240, 255, 0.04);
+  transition: background 0.2s ease;
+}
+
+/* --- Gradient text utility --- */
+.text-gradient-accent {
+  background: linear-gradient(135deg, #00f0ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
