@@ -3029,3 +3029,8 @@ html { scroll-behavior: smooth; }
   to { opacity: 1; transform: translateY(0); }
 }
 .fade-in { animation: fadeIn 0.5s ease forwards; }
+
+/* --- Enhanced tap glow --- */
+.tap-glow-intense {
+  filter: brightness(1.3) saturate(1.2);
+}
