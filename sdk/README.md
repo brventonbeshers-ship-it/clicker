@@ -1,6 +1,6 @@
 # clicker-stacks-sdk
 
-JavaScript SDK for interacting with the Clicker contract on Stacks.
+TypeScript SDK for interacting with the Clicker contract on Stacks.
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm install clicker-stacks-sdk
 
 ## Usage
 
-```js
+```ts
 const {
   getLeaderboard,
   getTotalClicks,
@@ -20,4 +20,11 @@ const {
 const total = await getTotalClicks();
 const leaderboard = await getLeaderboard();
 const tx = createTapCall();
+```
+
+## Development
+
+```bash
+npm install
+npm run build
 ```

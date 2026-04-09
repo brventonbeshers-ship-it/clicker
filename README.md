@@ -2,6 +2,15 @@
 
 On-chain tap game on Stacks.
 
+## Contract Details
+
+| Property | Value |
+|---|---|
+| Network | Stacks Mainnet |
+| Address | `SP1Q7YR67R6WGP28NXDJD1WZ11REPAAXRJJ3V6RKM` |
+| Name | `clicker` |
+| Explorer | [View on Hiro](https://explorer.hiro.so/address/SP1Q7YR67R6WGP28NXDJD1WZ11REPAAXRJJ3V6RKM.clicker?chain=mainnet) |
+
 ## Structure
 
 - `contracts/` - Clarity smart contract
@@ -10,9 +19,10 @@ On-chain tap game on Stacks.
 
 ## Tech Stack
 
-- Stacks + Clarity
-- Next.js + React + TypeScript
-- `@stacks/connect`, `@stacks/network`, `@stacks/transactions`
+- Smart Contract: Clarity on Stacks blockchain
+- Frontend: Next.js + React + TypeScript
+- Wallet: `@stacks/connect`
+- SDK: TypeScript client in `sdk/`
 
 ## Deployment
 
@@ -32,3 +42,7 @@ The SDK source now lives in [`sdk/`](./sdk).
 ```bash
 npm install clicker-stacks-sdk
 ```
+
+## License
+
+MIT
