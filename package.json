@@ -1,0 +1,23 @@
+{
+  "name": "clicker-stacks-sdk",
+  "version": "1.0.1",
+  "description": "TypeScript SDK for interacting with the Clicker smart contract on Stacks blockchain",
+  "main": "sdk/dist/index.js",
+  "types": "sdk/dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brventonbeshers-ship-it/clicker"
+  },
+  "keywords": [
+    "stacks",
+    "blockchain",
+    "clicker",
+    "clarity",
+    "smart-contract",
+    "sdk",
+    "web3",
+    "typescript"
+  ],
+  "author": "brventonbeshers-ship-it",
+  "license": "MIT"
+}
