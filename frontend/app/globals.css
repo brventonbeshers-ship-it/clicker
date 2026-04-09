@@ -3056,3 +3056,9 @@ html { scroll-behavior: smooth; }
   background: rgba(0, 240, 255, 0.25);
   color: #fff;
 }
+
+/* --- Counter numerals --- */
+.counter-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
