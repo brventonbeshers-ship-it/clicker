@@ -3315,3 +3315,14 @@ html { scroll-behavior: smooth; }
 .rank-gold { color: #ffd700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.3); }
 .rank-silver { color: #c0c0c0; text-shadow: 0 0 8px rgba(192, 192, 192, 0.3); }
 .rank-bronze { color: #cd7f32; text-shadow: 0 0 8px rgba(205, 127, 50, 0.3); }
+
+/* --- Shimmer --- */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
