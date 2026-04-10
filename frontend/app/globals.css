@@ -3439,3 +3439,26 @@ html { scroll-behavior: smooth; }
   transition: opacity 0.2s;
 }
 .tooltip:hover::after { opacity: 1; }
+
+/* --- Neon border --- */
+@keyframes neon-pulse {
+  0%, 100% { border-color: rgba(0, 240, 255, 0.3); }
+  50% { border-color: rgba(0, 240, 255, 0.6); }
+}
+.neon-border {
+  animation: neon-pulse 3s infinite;
+}
+
+/* --- Gradient text utility --- */
+.text-gradient-accent {
+  background: linear-gradient(135deg, #00f0ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Fade in --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease forwards; }
