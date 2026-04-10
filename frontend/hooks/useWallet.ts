@@ -14,3 +14,5 @@ export function useWallet() {
 
   return { address, connected: !!address, connect, disconnect };
 }
+
+// wallet: 1775826934221
