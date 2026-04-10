@@ -17,3 +17,5 @@ export function Counter({ label, value, size = "sm" }: CounterProps) {
     </div>
   );
 }
+
+// memo: 1775826924669
