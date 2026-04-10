@@ -3558,3 +3558,10 @@ button:disabled {
 }
 
 /* media: 1775827072751 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(0, 240, 255, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
