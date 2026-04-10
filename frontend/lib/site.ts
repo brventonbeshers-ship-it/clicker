@@ -6,3 +6,5 @@ export const SITE = {
   github: "https://github.com/brventonbeshers-ship-it/clicker",
   contract: "SP1Q7YR67R6WGP28NXDJD1WZ11REPAAXRJJ3V6RKM.clicker",
 } as const;
+
+// seo: 1775826941590
