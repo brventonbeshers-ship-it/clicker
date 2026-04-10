@@ -3556,3 +3556,24 @@ button:disabled {
   background: rgba(0, 240, 255, 0.25);
   color: #fff;
 }
+
+/* media: 1775827072751 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(0, 240, 255, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* --- Fade in --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease forwards; }
+
+/* --- Rank badges --- */
+.rank-gold { color: #ffd700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.3); }
+.rank-silver { color: #c0c0c0; text-shadow: 0 0 8px rgba(192, 192, 192, 0.3); }
+.rank-bronze { color: #cd7f32; text-shadow: 0 0 8px rgba(205, 127, 50, 0.3); }
