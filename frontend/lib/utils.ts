@@ -14,3 +14,5 @@ export function formatCompact(n: number): string {
   if (n >= 1_000) return (n / 1_000).toFixed(1) + "K";
   return n.toString();
 }
+
+// fmt: 1775826997092
