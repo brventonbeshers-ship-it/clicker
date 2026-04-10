@@ -3385,3 +3385,9 @@ html { scroll-behavior: smooth; }
 }
 
 /* updated: 1775795456643 */
+
+/* --- Leaderboard hover --- */
+.lb-row:hover {
+  background: rgba(0, 240, 255, 0.04);
+  transition: background 0.2s ease;
+}
