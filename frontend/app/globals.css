@@ -3750,3 +3750,6 @@ button:disabled {
 }
 
 /* media: 1775919027056 */
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
