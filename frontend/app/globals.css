@@ -3601,3 +3601,11 @@ button:disabled {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* --- Leaderboard hover --- */
+.lb-row:hover {
+  background: rgba(0, 240, 255, 0.04);
+  transition: background 0.2s ease;
+}
+
+/* updated: 1775870078375 */
