@@ -3783,3 +3783,10 @@ html { scroll-behavior: smooth; }
 /* scrollbar: 1775965374199 */
 
 /* media: 1775965397375 */
+
+/* updated: 1775965553637 */
+
+/* --- Enhanced tap glow --- */
+.tap-glow-intense {
+  filter: brightness(1.3) saturate(1.2);
+}
