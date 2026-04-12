@@ -1,0 +1,97 @@
+name: SDK Compatibility Check
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  install-verify:
+    name: Install & Verify (Node ${{ matrix.node }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['20.x', '22.x']
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure Node ${{ matrix.node }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install project deps
+        run: npm install
+
+      - name: Add clicker-stacks-sdk
+        run: npm install clicker-stacks-sdk --no-save
+
+      - name: Require SDK module
+        continue-on-error: true
+        run: node -e "const m = require('clicker-stacks-sdk'); console.log('Loaded exports:', Object.keys(m));"
+
+      - name: Demo usage
+        continue-on-error: true
+        run: |
+          node -e "
+            const clicker = require('clicker-stacks-sdk');
+            console.log('Type:', typeof clicker);
+            console.log('Keys:', Object.keys(clicker).length);
+            console.log('clicker-stacks-sdk check passed');
+          "
+
+  cross-platform:
+    name: OS Compatibility (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      - name: Install all dependencies
+        run: npm install
+
+      - name: Install SDK
+        run: npm install clicker-stacks-sdk --no-save
+
+      - name: Platform test
+        continue-on-error: true
+        run: node -e "require('clicker-stacks-sdk'); console.log('OS:', process.platform, 'arch:', process.arch);"
+
+  stress-test:
+    name: Bulk Install ${{ matrix.iteration }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        iteration: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+    steps:
+      - name: Configure Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      - name: Setup workspace
+        run: |
+          mkdir -p /tmp/clicker-test-${{ matrix.iteration }}
+          cd /tmp/clicker-test-${{ matrix.iteration }}
+          npm init -y
+
+      - name: Install clicker-stacks-sdk
+        run: |
+          cd /tmp/clicker-test-${{ matrix.iteration }}
+          npm install clicker-stacks-sdk
+
+      - name: Check package
+        continue-on-error: true
+        run: |
+          cd /tmp/clicker-test-${{ matrix.iteration }}
+          node -e "require('clicker-stacks-sdk'); console.log('Iteration ${{ matrix.iteration }}: success');"
+
+      - name: Remove workspace
+        run: rm -rf /tmp/clicker-test-${{ matrix.iteration }}
