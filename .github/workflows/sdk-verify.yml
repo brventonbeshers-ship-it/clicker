@@ -27,11 +27,9 @@ jobs:
         run: npm install clicker-stacks-sdk --no-save
 
       - name: Require SDK module
-        continue-on-error: true
         run: node -e "const m = require('clicker-stacks-sdk'); console.log('Loaded exports:', Object.keys(m));"
 
       - name: Demo usage
-        continue-on-error: true
         run: |
           node -e "
             const clicker = require('clicker-stacks-sdk');
@@ -61,7 +59,6 @@ jobs:
         run: npm install clicker-stacks-sdk --no-save
 
       - name: Platform test
-        continue-on-error: true
         run: node -e "require('clicker-stacks-sdk'); console.log('OS:', process.platform, 'arch:', process.arch);"
 
   stress-test:
@@ -88,7 +85,6 @@ jobs:
           npm install clicker-stacks-sdk
 
       - name: Check package
-        continue-on-error: true
         run: |
           cd /tmp/clicker-test-${{ matrix.iteration }}
           node -e "require('clicker-stacks-sdk'); console.log('Iteration ${{ matrix.iteration }}: success');"
