@@ -3863,3 +3863,8 @@ html { scroll-behavior: smooth; }
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+/* --- Mobile tap area --- */
+@media (max-width: 640px) {
+  .tap-target-mobile { min-width: 48px; min-height: 48px; }
+}
