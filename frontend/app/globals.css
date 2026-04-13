@@ -3801,3 +3801,10 @@ html { scroll-behavior: smooth; }
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
+
+/* --- Gradient text utility --- */
+.text-gradient-accent {
+  background: linear-gradient(135deg, #00f0ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
