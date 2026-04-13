@@ -3891,3 +3891,12 @@ html { scroll-behavior: smooth; }
 .rank-gold { color: #ffd700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.3); }
 .rank-silver { color: #c0c0c0; text-shadow: 0 0 8px rgba(192, 192, 192, 0.3); }
 .rank-bronze { color: #cd7f32; text-shadow: 0 0 8px rgba(205, 127, 50, 0.3); }
+
+/* --- Glass border glow --- */
+.glass-card-glow {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0, 240, 255, 0.12);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.03);
+}
