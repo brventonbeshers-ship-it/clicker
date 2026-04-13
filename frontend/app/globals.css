@@ -3880,3 +3880,9 @@ html { scroll-behavior: smooth; }
   background: #00f0ff;
   animation: pulse-dot 2s infinite;
 }
+
+/* --- Counter numerals --- */
+.counter-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
