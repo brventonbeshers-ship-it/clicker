@@ -4444,3 +4444,9 @@ button:disabled {
   background: rgba(0, 240, 255, 0.04);
   transition: background 0.2s ease;
 }
+
+/* --- Counter numerals --- */
+.counter-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
