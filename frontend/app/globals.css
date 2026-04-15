@@ -4380,3 +4380,7 @@ button:disabled {
 }
 
 /* updated: 1776254883515 */
+
+/* --- Transition util --- */
+.transition-fast { transition: all 0.15s ease; }
+.transition-med { transition: all 0.3s ease; }
