@@ -4495,3 +4495,15 @@ html { scroll-behavior: smooth; }
 .tooltip:hover::after { opacity: 1; }
 
 /* updated: 1776268224061 */
+
+/* --- Pulse dot --- */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+.pulse-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #00f0ff;
+  animation: pulse-dot 2s infinite;
+}
