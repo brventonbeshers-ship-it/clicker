@@ -4543,3 +4543,26 @@ html { scroll-behavior: smooth; }
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.03);
 }
+
+/* --- Shimmer --- */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* --- Card shadow --- */
+.card-elevated {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* --- Gradient text utility --- */
+.text-gradient-accent {
+  background: linear-gradient(135deg, #00f0ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
