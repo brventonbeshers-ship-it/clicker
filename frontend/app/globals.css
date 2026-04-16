@@ -4720,3 +4720,8 @@ button:disabled {
 }
 
 /* media: 1776348201353 */
+
+/* --- Mobile tap area --- */
+@media (max-width: 640px) {
+  .tap-target-mobile { min-width: 48px; min-height: 48px; }
+}
