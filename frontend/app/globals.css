@@ -4688,3 +4688,12 @@ button:disabled {
   background: #00f0ff;
   animation: pulse-dot 2s infinite;
 }
+
+/* updated: 1776348133908 */
+
+/* --- Fade in --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease forwards; }
