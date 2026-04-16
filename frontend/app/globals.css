@@ -4756,3 +4756,12 @@ html { scroll-behavior: smooth; }
 /* --- Transition util --- */
 .transition-fast { transition: all 0.15s ease; }
 .transition-med { transition: all 0.3s ease; }
+
+/* --- Glass border glow --- */
+.glass-card-glow {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0, 240, 255, 0.12);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.03);
+}
