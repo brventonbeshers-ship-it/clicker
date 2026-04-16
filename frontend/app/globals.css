@@ -4664,3 +4664,9 @@ button:disabled {
 @media (max-width: 640px) {
   .tap-target-mobile { min-width: 48px; min-height: 48px; }
 }
+
+/* --- Leaderboard hover --- */
+.lb-row:hover {
+  background: rgba(0, 240, 255, 0.04);
+  transition: background 0.2s ease;
+}
