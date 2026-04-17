@@ -171,3 +171,5 @@ export default function RootLayout({
 // layout: 1776399737049
 
 // fonts: 1776430318636
+
+// fonts: 1776457976734
