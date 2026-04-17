@@ -4958,3 +4958,7 @@ button:disabled {
 }
 
 /* media: 1776458094550 */
+
+/* --- Transition util --- */
+.transition-fast { transition: all 0.15s ease; }
+.transition-med { transition: all 0.3s ease; }
