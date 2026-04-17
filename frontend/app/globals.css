@@ -4805,3 +4805,9 @@ html { scroll-behavior: smooth; }
 }
 
 /* updated: 1776399643428 */
+
+/* --- Counter numerals --- */
+.counter-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
