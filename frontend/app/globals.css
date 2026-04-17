@@ -4950,3 +4950,11 @@ html { scroll-behavior: smooth; }
 /* scrollbar: 1776457891344 */
 
 /* updated: 1776458017559 */
+
+/* --- Disabled states --- */
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
+/* media: 1776458094550 */
