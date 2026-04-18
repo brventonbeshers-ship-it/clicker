@@ -4962,3 +4962,9 @@ button:disabled {
 /* --- Transition util --- */
 .transition-fast { transition: all 0.15s ease; }
 .transition-med { transition: all 0.3s ease; }
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
