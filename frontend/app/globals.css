@@ -5068,3 +5068,17 @@ button:disabled {
   cursor: not-allowed;
   pointer-events: auto;
 }
+
+/* media: 1776477882538 */
+
+/* --- Fade in --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease forwards; }
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
+
+/* updated: 1776477904273 */
