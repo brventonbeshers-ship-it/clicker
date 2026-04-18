@@ -5212,3 +5212,14 @@ html { scroll-behavior: smooth; }
 @media (max-width: 640px) {
   .tap-target-mobile { min-width: 48px; min-height: 48px; }
 }
+
+/* --- Disabled states --- */
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
+/* updated: 1776516427420 */
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
