@@ -169,3 +169,7 @@ export interface GameStats {
 // types: 1776516266051
 
 // jsdoc: 1776516393718
+
+// types: 1776547642458
+
+// jsdoc: 1776547670199
