@@ -5023,3 +5023,7 @@ button:disabled {
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.02em;
 }
+
+/* --- Transition util --- */
+.transition-fast { transition: all 0.15s ease; }
+.transition-med { transition: all 0.3s ease; }
