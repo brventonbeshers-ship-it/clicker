@@ -5220,3 +5220,6 @@ button:disabled {
 }
 
 /* updated: 1776516427420 */
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
