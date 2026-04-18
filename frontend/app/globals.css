@@ -5102,3 +5102,10 @@ html { scroll-behavior: smooth; }
 /* scrollbar: 1776491744808 */
 
 /* media: 1776491781466 */
+
+/* updated: 1776491832228 */
+
+/* --- Card shadow --- */
+.card-elevated {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.05);
+}
