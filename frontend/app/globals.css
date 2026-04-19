@@ -5423,3 +5423,7 @@ button:disabled {
 .rank-bronze { color: #cd7f32; text-shadow: 0 0 8px rgba(205, 127, 50, 0.3); }
 
 /* updated: 1776642281068 */
+
+/* --- Transition util --- */
+.transition-fast { transition: all 0.15s ease; }
+.transition-med { transition: all 0.3s ease; }
