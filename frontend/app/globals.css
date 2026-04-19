@@ -5348,3 +5348,9 @@ button:disabled {
 .fade-in { animation: fadeIn 0.5s ease forwards; }
 
 /* scrollbar: 1776583447201 */
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
