@@ -5548,3 +5548,8 @@ button:disabled {
 .fade-in { animation: fadeIn 0.5s ease forwards; }
 
 /* media: 1776670367808 */
+
+/* --- Mobile tap area --- */
+@media (max-width: 640px) {
+  .tap-target-mobile { min-width: 48px; min-height: 48px; }
+}
