@@ -5601,3 +5601,10 @@ button:disabled {
 /* --- Transition util --- */
 .transition-fast { transition: all 0.15s ease; }
 .transition-med { transition: all 0.3s ease; }
+
+/* --- Gradient text utility --- */
+.text-gradient-accent {
+  background: linear-gradient(135deg, #00f0ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
