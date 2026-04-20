@@ -5659,3 +5659,27 @@ button:disabled {
   cursor: not-allowed;
   pointer-events: auto;
 }
+
+/* scrollbar: 1776699329110 */
+
+/* --- Counter numerals --- */
+.counter-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(0, 240, 255, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* --- Glass border glow --- */
+.glass-card-glow {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0, 240, 255, 0.12);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.03);
+}
