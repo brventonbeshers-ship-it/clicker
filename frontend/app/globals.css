@@ -5685,3 +5685,13 @@ button:disabled {
 }
 
 /* updated: 1776699374682 */
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
+
+/* --- Enhanced tap glow --- */
+.tap-glow-intense {
+  filter: brightness(1.3) saturate(1.2);
+}
+
+/* media: 1776699599425 */
