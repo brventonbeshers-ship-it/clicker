@@ -5525,3 +5525,12 @@ button:disabled {
 /* scrollbar: 1776670143822 */
 
 /* updated: 1776670167288 */
+
+/* --- Glass border glow --- */
+.glass-card-glow {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0, 240, 255, 0.12);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.03);
+}
