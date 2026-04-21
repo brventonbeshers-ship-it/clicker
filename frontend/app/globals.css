@@ -5768,3 +5768,11 @@ button:disabled {
 .tap-glow-intense {
   filter: brightness(1.3) saturate(1.2);
 }
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
+
+/* updated: 1776749755127 */
