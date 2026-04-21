@@ -5806,3 +5806,25 @@ button:disabled {
   to { opacity: 1; transform: translateY(0); }
 }
 .fade-in { animation: fadeIn 0.5s ease forwards; }
+
+/* --- Tooltip --- */
+.tooltip {
+  position: relative;
+}
+.tooltip::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.tooltip:hover::after { opacity: 1; }
