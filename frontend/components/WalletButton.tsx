@@ -136,3 +136,5 @@ export function WalletButton({ connected, address, onConnect }: WalletButtonProp
 // a11y: 1776699280502
 
 // walletBtn: 1776699434481
+
+// a11y: 1776749672387
