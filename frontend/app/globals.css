@@ -5715,3 +5715,6 @@ html { scroll-behavior: smooth; }
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
