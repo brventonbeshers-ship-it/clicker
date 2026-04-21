@@ -5776,3 +5776,14 @@ button:disabled {
 }
 
 /* updated: 1776749755127 */
+
+/* scrollbar: 1776778939588 */
+
+/* media: 1776778947137 */
+
+/* --- Gradient text utility --- */
+.text-gradient-accent {
+  background: linear-gradient(135deg, #00f0ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
