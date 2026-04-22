@@ -5987,3 +5987,9 @@ html { scroll-behavior: smooth; }
 }
 
 /* media: 1776832155017 */
+
+/* --- Counter numerals --- */
+.counter-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
