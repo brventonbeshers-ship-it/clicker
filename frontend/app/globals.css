@@ -6173,3 +6173,6 @@ html { scroll-behavior: smooth; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
