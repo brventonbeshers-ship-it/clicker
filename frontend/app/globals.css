@@ -6099,3 +6099,10 @@ html { scroll-behavior: smooth; }
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.03);
 }
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(0, 240, 255, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
