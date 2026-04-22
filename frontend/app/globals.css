@@ -6251,3 +6251,14 @@ button:disabled {
   background: rgba(0, 240, 255, 0.25);
   color: #fff;
 }
+
+/* --- Neon border --- */
+@keyframes neon-pulse {
+  0%, 100% { border-color: rgba(0, 240, 255, 0.3); }
+  50% { border-color: rgba(0, 240, 255, 0.6); }
+}
+.neon-border {
+  animation: neon-pulse 3s infinite;
+}
+
+/* updated: 1776887766991 */
