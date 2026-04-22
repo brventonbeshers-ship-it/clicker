@@ -6262,3 +6262,9 @@ button:disabled {
 }
 
 /* updated: 1776887766991 */
+
+/* --- Counter numerals --- */
+.counter-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
