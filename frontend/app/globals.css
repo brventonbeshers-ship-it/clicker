@@ -6360,3 +6360,8 @@ button:disabled {
 }
 
 /* updated: 1776937014511 */
+
+/* --- Enhanced tap glow --- */
+.tap-glow-intense {
+  filter: brightness(1.3) saturate(1.2);
+}
