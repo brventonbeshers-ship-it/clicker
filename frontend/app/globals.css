@@ -6303,3 +6303,10 @@ html { scroll-behavior: smooth; }
 /* --- Transition util --- */
 .transition-fast { transition: all 0.15s ease; }
 .transition-med { transition: all 0.3s ease; }
+
+/* --- Fade in --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease forwards; }
