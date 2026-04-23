@@ -6365,3 +6365,8 @@ button:disabled {
 .tap-glow-intense {
   filter: brightness(1.3) saturate(1.2);
 }
+
+/* --- Mobile tap area --- */
+@media (max-width: 640px) {
+  .tap-target-mobile { min-width: 48px; min-height: 48px; }
+}
