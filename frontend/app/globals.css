@@ -6412,3 +6412,11 @@ button:disabled {
 /* media: 1776960212645 */
 
 /* updated: 1776960280540 */
+
+/* --- Leaderboard hover --- */
+.lb-row:hover {
+  background: rgba(0, 240, 255, 0.04);
+  transition: background 0.2s ease;
+}
+
+/* scrollbar: 1776960416630 */
