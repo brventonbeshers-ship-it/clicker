@@ -6565,3 +6565,9 @@ button:disabled {
 /* media: 1777023014692 */
 
 /* scrollbar: 1777023061205 */
+
+/* scrollbar: 1777035099031 */
+
+/* --- Transition util --- */
+.transition-fast { transition: all 0.15s ease; }
+.transition-med { transition: all 0.3s ease; }
