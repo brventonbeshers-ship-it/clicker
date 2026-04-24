@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '9 2 * * *'
-    - cron: '9 14 * * *'
+    - cron: '3 2 * * *'
+    - cron: '3 14 * * *'
   workflow_dispatch:
 
 jobs:
@@ -32,30 +32,42 @@ jobs:
             npm install -g pnpm 2>/dev/null
           fi
 
-      - name: Install SDK
+      - name: Install SDK packages
         run: |
           DIR=$(mktemp -d)
           cd "$DIR"
           npm init -y > /dev/null 2>&1
           if [ "${{ matrix.pm }}" = "npm" ]; then
             npm install clicker-stacks-sdk --no-save --no-package-lock 2>/dev/null
+            npm install clicker-sdk --no-save --no-package-lock 2>/dev/null
+            npm install clicker-analytics --no-save --no-package-lock 2>/dev/null
           elif [ "${{ matrix.pm }}" = "yarn" ]; then
             yarn add clicker-stacks-sdk --no-lockfile 2>/dev/null || npm install clicker-stacks-sdk --no-save 2>/dev/null
+            yarn add clicker-sdk --no-lockfile 2>/dev/null || npm install clicker-sdk --no-save 2>/dev/null
+            yarn add clicker-analytics --no-lockfile 2>/dev/null || npm install clicker-analytics --no-save 2>/dev/null
           elif [ "${{ matrix.pm }}" = "pnpm" ]; then
             pnpm add clicker-stacks-sdk --no-lockfile 2>/dev/null || npm install clicker-stacks-sdk --no-save 2>/dev/null
+            pnpm add clicker-sdk --no-lockfile 2>/dev/null || npm install clicker-sdk --no-save 2>/dev/null
+            pnpm add clicker-analytics --no-lockfile 2>/dev/null || npm install clicker-analytics --no-save 2>/dev/null
           fi
           echo "Install complete"
 
-      - name: Verify import
+      - name: Verify imports
         run: |
           DIR=$(mktemp -d)
           cd "$DIR"
           npm init -y > /dev/null 2>&1
           npm install clicker-stacks-sdk --no-save --no-package-lock --quiet 2>/dev/null
-          node -e "const sdk = require('clicker-stacks-sdk'); console.log('Module loaded:', typeof sdk);"
-          echo "Import verified on Node ${{ matrix.node }}"
+          node -e "const sdk = require('clicker-stacks-sdk'); console.log('clicker-stacks-sdk loaded:', typeof sdk);"
+          npm install clicker-sdk --no-save --no-package-lock --quiet 2>/dev/null
+          node -e "const sdk = require('clicker-sdk'); console.log('clicker-sdk loaded:', typeof sdk);"
+          npm install clicker-analytics --no-save --no-package-lock --quiet 2>/dev/null
+          node -e "const sdk = require('clicker-analytics'); console.log('clicker-analytics loaded:', typeof sdk);"
+          echo "All imports verified on Node ${{ matrix.node }}"
 
       - name: Check package metadata
         run: |
           npm view clicker-stacks-sdk version description 2>/dev/null
+          npm view clicker-sdk version description 2>/dev/null
+          npm view clicker-analytics version description 2>/dev/null
           echo "Metadata check passed"
