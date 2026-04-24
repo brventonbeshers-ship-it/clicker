@@ -6681,3 +6681,9 @@ button:disabled {
 /* media: 1777060216203 */
 
 /* updated: 1777060238437 */
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
