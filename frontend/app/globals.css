@@ -6692,3 +6692,23 @@ button:disabled {
 html { scroll-behavior: smooth; }
 
 /* scrollbar: 1777060295291 */
+
+/* --- Neon border --- */
+@keyframes neon-pulse {
+  0%, 100% { border-color: rgba(0, 240, 255, 0.3); }
+  50% { border-color: rgba(0, 240, 255, 0.6); }
+}
+.neon-border {
+  animation: neon-pulse 3s infinite;
+}
+
+/* --- Shimmer --- */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
