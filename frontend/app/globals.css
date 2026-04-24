@@ -6712,3 +6712,12 @@ html { scroll-behavior: smooth; }
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
+
+/* --- Leaderboard hover --- */
+.lb-row:hover {
+  background: rgba(0, 240, 255, 0.04);
+  transition: background 0.2s ease;
+}
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
