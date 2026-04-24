@@ -6718,3 +6718,6 @@ html { scroll-behavior: smooth; }
   background: rgba(0, 240, 255, 0.04);
   transition: background 0.2s ease;
 }
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
