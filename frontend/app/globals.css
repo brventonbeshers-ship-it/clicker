@@ -6774,3 +6774,9 @@ button:disabled {
   transition: opacity 0.2s;
 }
 .tooltip:hover::after { opacity: 1; }
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
