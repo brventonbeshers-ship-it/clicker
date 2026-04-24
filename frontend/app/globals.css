@@ -6741,3 +6741,9 @@ button:disabled {
   cursor: not-allowed;
   pointer-events: auto;
 }
+
+/* --- Counter numerals --- */
+.counter-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
