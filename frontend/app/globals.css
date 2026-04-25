@@ -6857,3 +6857,9 @@ button:disabled {
 }
 
 /* scrollbar: 1777117065654 */
+
+/* --- Counter numerals --- */
+.counter-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
