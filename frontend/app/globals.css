@@ -6966,3 +6966,9 @@ button:disabled {
   to { opacity: 1; transform: translateY(0); }
 }
 .fade-in { animation: fadeIn 0.5s ease forwards; }
+
+/* --- Disabled states --- */
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: auto;
+}
