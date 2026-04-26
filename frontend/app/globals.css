@@ -7069,3 +7069,9 @@ button:disabled {
 }
 
 /* updated: 1777192286294 */
+
+/* --- Leaderboard hover --- */
+.lb-row:hover {
+  background: rgba(0, 240, 255, 0.04);
+  transition: background 0.2s ease;
+}
