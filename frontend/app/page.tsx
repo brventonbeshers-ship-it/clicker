@@ -651,3 +651,5 @@ export default function Home() {
 // ui: 1777212972886
 
 // a11y: 1777235456168
+
+// perf: 1777235489116
