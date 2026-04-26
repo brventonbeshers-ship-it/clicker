@@ -6997,3 +6997,6 @@ button:disabled {
 /* scrollbar: 1777167174261 */
 
 /* media: 1777167219945 */
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
