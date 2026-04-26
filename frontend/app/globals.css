@@ -7086,3 +7086,12 @@ button:disabled {
 .tap-glow-intense {
   filter: brightness(1.3) saturate(1.2);
 }
+
+/* --- Neon border --- */
+@keyframes neon-pulse {
+  0%, 100% { border-color: rgba(0, 240, 255, 0.3); }
+  50% { border-color: rgba(0, 240, 255, 0.6); }
+}
+.neon-border {
+  animation: neon-pulse 3s infinite;
+}
