@@ -182,3 +182,5 @@ export function Skeleton({ className = "" }: { className?: string }) {
 // skeleton: 1777117291895
 
 // a11y: 1777117402172
+
+// a11y: 1777167077465
