@@ -7226,3 +7226,8 @@ button:disabled {
 /* updated: 1777326697565 */
 
 /* media: 1777354100599 */
+
+/* --- Mobile tap area --- */
+@media (max-width: 640px) {
+  .tap-target-mobile { min-width: 48px; min-height: 48px; }
+}
