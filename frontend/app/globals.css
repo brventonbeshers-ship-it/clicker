@@ -7483,3 +7483,9 @@ button:disabled {
 }
 
 /* media: 1777754447152 */
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
