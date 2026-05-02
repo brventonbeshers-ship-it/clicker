@@ -7413,3 +7413,5 @@ html { scroll-behavior: smooth; }
   transition: opacity 0.2s;
 }
 .tooltip:hover::after { opacity: 1; }
+
+/* updated: 1777697833141 */
