@@ -7483,3 +7483,18 @@ button:disabled {
 }
 
 /* media: 1777754447152 */
+
+/* --- Selection --- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
+
+/* --- Fade in --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.5s ease forwards; }
+
+/* updated: 1777754487553 */
