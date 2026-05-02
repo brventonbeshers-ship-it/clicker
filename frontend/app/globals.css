@@ -7415,3 +7415,12 @@ html { scroll-behavior: smooth; }
 .tooltip:hover::after { opacity: 1; }
 
 /* updated: 1777697833141 */
+
+/* media: 1777697871941 */
+
+/* --- Gradient text utility --- */
+.text-gradient-accent {
+  background: linear-gradient(135deg, #00f0ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
