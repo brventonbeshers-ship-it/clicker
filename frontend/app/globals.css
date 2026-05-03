@@ -7539,3 +7539,14 @@ button:disabled {
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.02em;
 }
+
+/* --- Leaderboard hover --- */
+.lb-row:hover {
+  background: rgba(0, 240, 255, 0.04);
+  transition: background 0.2s ease;
+}
+
+/* scrollbar: 1777796485519 */
+
+/* --- Smooth scroll --- */
+html { scroll-behavior: smooth; }
